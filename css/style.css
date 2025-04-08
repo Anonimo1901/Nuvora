@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --blanco: #f2f2f2;
+  --negro: #0e0d0a;
+  --celeste: #D6EFFF;
+  --celeste2: #0066FF;
+  --celeste3:  #004FCC;
+  --gris: #353535;
+  --gris2: #cccfd6;
+  --gris3: #edeef0;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+}
+#encabezado {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20rem;
+  align-items: center;
+  border-bottom: var(--gris2) 1px solid;
+
+}
+.contenido {
+  padding: 10px 20rem;
+}
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  
+}
+.logo:hover {
+  scale: 1.15;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+.titulo-principal {
+  font-weight: 650;
+  font-size: 1.15rem;
+}
+.link {
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 0.9rem;
+  color: var(--gris);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.link:hover {
+  color: var(--negro);
+}
+.buscador {
+  padding: 8px;
+  width: 28rem;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  border: var(--gris2) 1px solid;
+}
+.buscador:focus{
+  outline: none;
+  border: 1px solid var(--gris);
+}
+.titulo{
+  font-weight: 550;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.subtitulo{
+  font-weight: 550;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+h1,h2,h3{
+  margin: 0;
+  padding: 0;
+}
+
+.producto {
+  border: var(--gris2) solid 1px;
+  border-radius: 0.3rem;
+  width: 220px;
+  height: 330px;
+  transition: 0.25s;
+}
+.producto:hover{
+  cursor: pointer;
+  box-shadow:  0 4px 12px var(--gris2);
+}
+.c-img-producto {
+  background-color: var(--gris3);
+  border-radius: 0.3rem 0.3rem 0 0 ;
+  border-bottom: var(--gris2) 1px solid;
+  display: flex;
+  justify-content: center;
+}
+.c-cont-producto {
+  padding: 0.8rem;
+}
+.img-producto {
+  height: 10rem;
+  width: 10rem;
+}
+.titulo-producto {
+  font-weight: 450;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+.desc-producto {
+  margin: 0;
+  padding: 0;
+  font-weight: 450;
+  font-size: 0.8rem;
+  color: var(--gris);
+}
+.informacion-producto {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0px;
+}
+.precio-producto {
+  font-weight: 450;
+  font-size: 18px;
+}
+.envio-producto {
+  font-weight: 550;
+  font-size: 0.7rem;
+  border: var(--gris) solid 1px;
+  color: var(--gris);
+  padding: 2.5px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  height: 12px;
+}
+.btn-agregar {
+  background-color: var(--celeste2);
+  color: var(--blanco);
+  border: none;
+  border-radius: 0.3rem;
+  transition: 0.25s;
+  cursor: pointer;
+  width: 100%;
+  height: 2.5rem;
+}
+.btn-agregar:hover {
+  background-color: var(--celeste3);
+}
+.banner {
+  background: linear-gradient(to bottom, var(--celeste) 0%, transparent 100%);
+  height: 25rem;
+  display: grid;
+  align-content: center;
+  padding: 0 20rem;
+}
+
+.titulo-banner{
+  font-weight: 1000;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.subtitulo-banner{
+  font-weight: 1000;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+.izq-item{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--negro);
+  font-weight: 400;
+}
+.mid-item, .rig-item{
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem
+}
+.logo-header{
+  transition: 0.5s;
+
+}
+.logo-envios{
+  height: 2.5rem;
+}
+.logo-header:hover{
+  scale: 1.1;
+}
+.icon-nav{
+  font-size: 1.5rem;
+}
+.productos {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
